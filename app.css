@@ -41,7 +41,7 @@ list-style: none;
 
 header {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   width: 100%;
   height: calc(100vh - 3rem);
@@ -54,7 +54,7 @@ header {
   width: 100%;
   margin: auto;
   position: absolute;
-  bottom: 35%;
+  bottom: 40%;
   text-align: center;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .subheader {
-  font-size:  1rem;
+  font-size:  0.8rem;
   margin: 0;
 }
 
@@ -77,7 +77,6 @@ header {
 
 .leftcol {
   overflow: hidden;
-  /*background-color: #eee;*/
   float: left;
   width: 66.666%;
 }
@@ -87,6 +86,7 @@ header {
   text-transform: uppercase;
   margin: auto;
   width: 90%;
+  margin-top: 10px;
 }
 
 main ul {
@@ -124,8 +124,46 @@ main li {
   margin: auto;
   padding-top: 40px;
   margin-top: 10px;
-
 }
+
+blockquote {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.main-buttons {
+  text-align: center;
+}
+
+.button1, .button {
+  color: #fff;
+  padding: 0px 3px 0px 0px;
+  border: 0;
+  border-left-color: rgb(60, 60, 60);
+}
+
+.button1 {
+  background-color: rgb(156, 172, 204);
+}
+
+.button {
+  background-color: rgb(60, 93, 232);
+}
+
+.fa {
+  padding: 6px;
+  margin-right: 3px;
+  line-height: 17px;
+ }
+
+.fa-comment-o, .fa-cloud-download {
+  background-color: rgb(60, 60, 60);
+}
+
+.fa-share-square-o {
+  background-color: rgb(5, 8, 68);
+}
+
 
 /*** SIDEBAR ***/
 
