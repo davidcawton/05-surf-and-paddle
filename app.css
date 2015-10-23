@@ -1,7 +1,80 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  max-width: 1040px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  /*color: rgba(255, 255, 255, 0);*/
+}
+
+/*** NAVIGATION STUFF ***/
+
+nav {
+  padding: 0;
+  height: 3rem;
+  position: relative;
+}
+
+.nav-left {
+  position: absolute;
+  left: 15%;
+  margin-top: 10px;
+  padding: 0;
+
+}
+
+.search-list {
+  position: absolute;
+  right: 15%;
+}
+
+.search-list li {
+display: inline-block;
+list-style: none;
+}
+
+/*** HEADER STUFF ***/
+
+header {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 3rem);
+  background: url(Images/headerSAP.jpg)
+  no-repeat center center fixed;
+}
+
+.Hero {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 35%;
+  text-align: center;
+}
+
+.pagetitle {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.subheader {
+  font-size:  1rem;
+  margin: 0;
+}
+
+.leftcol {
+  background-color: #eee;
+  float: left;
+  width: 66.666%;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #50b112;
+  float: left;
+  width: 33.333%;
+  position: relative;
 }
