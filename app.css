@@ -1,7 +1,6 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  max-width: 1040px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -14,19 +13,23 @@ nav {
   padding: 0;
   height: 3rem;
   position: relative;
+  top: 10%;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .nav-left {
   position: absolute;
   left: 15%;
-  margin-top: 10px;
   padding: 0;
+  margin: 0;
 
 }
 
 .search-list {
   position: absolute;
   right: 15%;
+  margin: 0;
 }
 
 .search-list li {
@@ -38,15 +41,16 @@ list-style: none;
 
 header {
   position: relative;
-  margin: 10px;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   width: 100%;
   height: calc(100vh - 3rem);
   background: url(Images/headerSAP.jpg)
-  no-repeat center center fixed;
+  no-repeat center center ;
+  background-size: cover;
 }
 
-.Hero {
+.hero {
   width: 100%;
   margin: auto;
   position: absolute;
@@ -56,6 +60,7 @@ header {
 
 .pagetitle {
   font-size: 4rem;
+  text-transform: uppercase;
   margin-bottom: 0;
   color: #fff;
 }
@@ -65,16 +70,69 @@ header {
   margin: 0;
 }
 
+
+/*** MAIN CONTENT ***/
+
+/*** MAIN COLUMN ***/
+
 .leftcol {
-  background-color: #eee;
+  overflow: hidden;
+  /*background-color: #eee;*/
   float: left;
   width: 66.666%;
-  position: relative;
 }
 
-.sidebar {
-  background-color: #50b112;
+.h2-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: auto;
+  width: 90%;
+}
+
+main ul {
+  width: 90%;
   float: left;
+  text-align: left;
+  padding: 0;
+  margin-left: 30px;
+  font-size: 0.7em;
+}
+
+main li {
+  display: inline-block;
+}
+
+.timedate {
+  margin-left: 15px;
+
+}
+.authorpic {
+  border-radius: 50%;
+}
+
+#author {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  margin: 0 5px 0 0;
+  line-height: 15px;
+  transform: translateY(2px);
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  margin-top: 10px;
+
+}
+
+/*** SIDEBAR ***/
+
+.sidebar {
+  overflow: hidden;
+  background-color: #50b112;
+  float: right;
   width: 33.333%;
   position: relative;
 }
