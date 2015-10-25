@@ -264,22 +264,23 @@ aside {
 }
 
 .bottom-pics {
-  width: 250px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
 
 }
 
 .bottom-grid {
   background-color: #ddd;
   display: inline-block;
-  width: 250px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   margin: 0;
   position: relative;
+  font-size: 1.2rem;
 }
 
 .picture-titles {
-  margin: 0;
+  margin: 5px;
   top: 90%;
   position: absolute;
 }
