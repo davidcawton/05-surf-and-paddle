@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  width: 1040px;
   font-family: 'Raleway', sans-serif;
 }
 *, *:before, *:after {
@@ -11,11 +12,11 @@ html {
 /*** NAVIGATION STUFF ***/
 
 nav {
-  padding: 0;
-  height: 3rem;
   position: relative;
   top: 0%;
   margin: 0;
+  padding: 0;
+  height: 3rem;
   text-transform: uppercase;
   font-size: .4em;
   color: rgb(20, 42, 84);
@@ -23,14 +24,14 @@ nav {
 
 .nav-left {
   position: absolute;
-  left: 5%;
+  left: 10%;
   padding: 0;
   margin: 0;
 }
 
 .search-list {
   position: absolute;
-  right: 15%;
+  right: 10%;
   margin: 0;
 }
 
@@ -41,6 +42,7 @@ list-style: none;
 
 .fa-sun-o {
   transform: scale(2);
+  margin: 5px;
 }
 
 /*** HEADER STUFF ***/
@@ -57,23 +59,23 @@ header {
 }
 
 .hero {
-  width: 100%;
-  margin: auto;
   position: absolute;
   bottom: 40%;
+  width: 100%;
+  margin: auto;
   text-align: center;
 }
 
 .pagetitle {
+  margin-bottom: 0;
   font-size: 4rem;
   text-transform: uppercase;
-  margin-bottom: 0;
   color: #fff;
 }
 
 .subheader {
-  font-size:  0.8rem;
   margin: 0;
+  font-size:  0.8rem;
   color: rgb(20, 42, 84);
 }
 
@@ -90,23 +92,22 @@ main {
 }
 
 .h2-heading {
-  margin: auto;
   width: 70%;
+  margin: auto;
   margin-top: 10px;
   font-size: 2rem;
   text-transform: uppercase;
   color: rgb(20, 42, 84);
-
 }
 
 main ul {
+  position: absolute;
+  left: 7%;
   float: left;
   text-align: left;
   padding: 0;
   margin-left: 30px;
   font-size: 0.7em;
-  position: absolute;
-  left: 7%;
 }
 
 main li {
@@ -120,13 +121,11 @@ main li {
 #on {
   text-decoration: underline;
   color: rgb(47, 43, 47);
-
 }
 
 .authorpic {
   border-radius: 50%;
-  border: solid 2px #000;
-
+  border: solid 1px #000;
 }
 
 #author {
@@ -157,13 +156,13 @@ main li {
 }
 
 blockquote {
-  font-size: 1.7rem;
   border-left: solid 2px #ddd;
   padding-left: 40px;
-  text-transform: uppercase;
   margin-top: 12px;
   margin-left: 5px;
+  font-size: 1.7rem;
   text-align: left;
+  text-transform: uppercase;
   color: rgb(20, 42, 84);
 }
 
@@ -174,9 +173,9 @@ transform: scale(.7);
 }
 
 .button1, .button {
-  color: #fff;
   padding: 0px 3px 0px 0px;
   border: 0;
+  color: #fff;
   border-left-color: rgb(60, 60, 60);
 }
 
@@ -211,9 +210,9 @@ aside {
 
 }
 .top-sidebar {
-  text-align: center;
   margin-bottom: 30px;
   padding: 0;
+  text-align: center;
 }
 
 
@@ -233,7 +232,7 @@ aside {
 }
 
 #sb-addtext {
-  text-align: right;
+  /*text-align: right;*/
   text-decoration: underline;
   vertical-align: top;
   margin: 0;
@@ -258,29 +257,86 @@ aside {
 
 #most-popular {
   width: 100%;
+  margin: 25px;
   text-align: center;
   font-size: 3rem;
-  margin: 25px;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .bottom-pics {
   width: 220px;
   height: 220px;
-
 }
 
 .bottom-grid {
-  background-color: #ddd;
-  display: inline-block;
+  position: relative;
   width: 220px;
   height: 220px;
   margin: 0;
-  position: relative;
+  background-color: #ddd;
   font-size: 1.2rem;
 }
 
 .picture-titles {
-  margin: 5px;
-  top: 90%;
   position: absolute;
+  margin: 5px;
+  top: 85%;
+}
+
+#selected-title {
+  color: #fff;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+  display: flex;
+  width: 880px;
+  transform: translateX(80px);
+  background: rgb(20, 42, 84);
+  font-size: .7rem;
+}
+
+.ironyard-logo {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 15px 70px 0 70px;
+  line-height: 30px;
+  }
+
+  #footer-text {
+  display: inline-block;
+  margin: 20px 20px 0px;
+  line-height: 20px;
+  color: rgb(146, 186, 252);
+  }
+
+.bottom-nav {
+  margin-top: 20px;
+  margin-left: 40px ;
+  line-height: 20px;
+  color: rgb(146, 186, 252);
+
+}
+
+  .bottom-nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+  }
+
+.nav-items {
+    border-right: solid 1px;
+}
+
+#selected-nav {
+  color: #ccc;
 }
