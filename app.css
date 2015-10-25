@@ -79,11 +79,13 @@ header {
 
 /************* MAIN CONTENT ***/
 
+main {
+  display: flex;
+}
+
 /*** LEFT COLUMN ***/
 
 .leftcol {
-  overflow: hidden;
-  float: left;
   width: 66.666%;
 }
 
@@ -123,6 +125,8 @@ main li {
 
 .authorpic {
   border-radius: 50%;
+  border: solid 2px #000;
+
 }
 
 #author {
@@ -141,13 +145,28 @@ main li {
   margin-top: 10px;
 }
 
+#active-link {
+  text-decoration: underline;
+  color: rgb(97, 97, 98);
+}
+
+#linked {
+  text-decoration: underline;
+  color: rgb(16, 86, 205);
+
+}
+
 blockquote {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  border-left: solid 2px #ddd;
+  padding-left: 40px;
   text-transform: uppercase;
   margin-top: 12px;
+  margin-left: 5px;
   text-align: left;
   color: rgb(20, 42, 84);
 }
+
 
 .main-buttons {
 position: relative;
@@ -185,30 +204,32 @@ transform: scale(.7);
 
 
 /*** SIDEBAR ***/
+
 aside {
   overflow: hidden;
   width: 33.333%;
-  margin-top: 15px;
-  margin-b: 100px;
+
+}
+.top-sidebar {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 
-/*.sidebar {
+.sb-an, .sb-text {
+  margin: 0;
+}
 
-}*/
-
-.top-sidebar {
-  text-align: center;
+.sb-text {
+  font-size: .5rem;
+  te
 }
 
 #side-author {
-  width: 60px;
-  height: 60px;
-}
-
-.sb-pic {
-  width: 360px;
-  height: auto;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0px 0px;
 }
 
 #sb-addtext {
@@ -218,36 +239,47 @@ aside {
   margin: 0;
 }
 
+.sb-pic {
+  width: 360px;
+  height: auto;
+}
+
 #sb-para-h3 {
   margin-bottom: 0;
   font-size: 1.5em;
 }
 
+/*** BOTTOM SECTIN ***/
 
+.most-popular {
+  text-align: center;
+  width: 100%;
+}
 
+#most-popular {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  margin: 25px;
+}
 
+.bottom-pics {
+  width: 250px;
+  height: 300px;
 
+}
 
+.bottom-grid {
+  background-color: #ddd;
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  margin: 0;
+  position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.picture-titles {
+  margin: 0;
+  top: 90%;
+  position: absolute;
 }
