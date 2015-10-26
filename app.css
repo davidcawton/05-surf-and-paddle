@@ -1,7 +1,6 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  width: 1040px;
   font-family: 'Raleway', sans-serif;
 }
 *, *:before, *:after {
@@ -10,6 +9,10 @@ html {
 }
 
 /*** NAVIGATION STUFF ***/
+
+body {
+  margin:0;
+}
 
 nav {
   position: relative;
@@ -48,28 +51,27 @@ list-style: none;
 /*** HEADER STUFF ***/
 
 header {
-  position: relative;
-  margin: 0 20px 30px;
-  padding-bottom: 10px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background: url(Images/headerSAP.jpg)
-  no-repeat center center ;
+  no-repeat center fixed ;
   background-size: cover;
 }
 
 
 .hero {
-  position: absolute;
-  bottom: 40%;
-  width: 100%;
-  margin: auto;
+  margin-top: 100px;
+  align-content: center;
   text-align: center;
 }
 
 .pagetitle {
-  margin-bottom: 0;
-  font-size: 4rem;
+  margin: 0;
+  font-size: 5rem;
   text-transform: uppercase;
   color: #fff;
 }
@@ -84,38 +86,44 @@ header {
 
 main {
   display: flex;
+  align-content: center;
 }
+
+.leftcol {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-content: center;
+  width: 80%;
+  margin: 35px 50px;
+  padding: 20px;
+}
+
 
 /*** LEFT COLUMN ***/
 
-.leftcol {
-  width: 66.666%;
-}
 
 .h2-heading {
-  width: 80%;
-  margin: auto;
   margin-top: 10px;
-  font-size: 2rem;
+  margin-bottom: 0;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: rgb(20, 42, 84);
 }
 
-main ul {
-  width: 80%;
-  /*transform: translateX(63px);*/
-  margin: auto;
-  padding: 0;
-  font-size: 0.7em;
+.post-title {
+  display: flex;
+  margin: 0;
+  padding: 5px;
 }
+
 
 main li {
-  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
 }
 
-.timedate {
-  margin-left: 15px;
-}
 
 #on {
   text-decoration: underline;
@@ -124,24 +132,18 @@ main li {
 
 .authorpic {
   border-radius: 50%;
-  border: solid 1px #000;
+  border: solid 0.8px #000;
 }
 
 #author {
   width: 15px;
   height: 15px;
-  margin: 5px;
-  margin: 0 5px 0 0;
-  line-height: 15px;
-  transform: translateY(2px);
+  margin-right: 10px;
 }
 
 .content {
-  width: 80%;
-  margin: auto;
-  padding-top: 30px;
-  margin-top: 10px;
-  font-size: 14px;
+  padding-top: 20px;
+  font-size: 1em;
 }
 
 #active-link {
@@ -158,19 +160,14 @@ main li {
 blockquote {
   border-left: solid 2px #ddd;
   padding-left: 40px;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-left: 5px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   text-transform: uppercase;
   color: rgb(20, 42, 84);
 }
 
-
-.main-buttons {
-position: relative;
-transform: scale(.7);
-}
 
 .button1, .button {
   padding: 0px 3px 0px 0px;
@@ -205,34 +202,28 @@ transform: scale(.7);
 /*** SIDEBAR ***/
 
 aside {
+  flex: 1;
   overflow: hidden;
-  width: 33.333%;
-
-}
-.top-sidebar {
-  margin-bottom: 30px;
-  padding: 0;
+  margin-top: 35px;
   text-align: center;
 }
 
-
-.sb-an, .sb-text {
+.sb-an {
   margin: 0;
 }
 
 .sb-text {
   font-size: .5rem;
-  te
 }
 
 #s-para {
-  font-size: .7rem;
+  font-size: 1rem;
+  text-align: left;
 }
 
 #side-author {
   width: 40px;
   height: 40px;
-  margin: 10px 0px 0px;
 }
 
 #sb-addtext {
@@ -244,7 +235,7 @@ aside {
 }
 
 .sb-pic {
-  width: 360px;
+  width: 289px;
   height: auto;
 }
 
@@ -256,13 +247,13 @@ aside {
 /*** BOTTOM SECTIN ***/
 
 .most-popular {
-width: 100%;
-margin-left: 20px;
+display: flex;
+flex-direction: column;
+align-content: center;
   }
 
 #most-popular {
-  width: 100%;
-  margin: 25px;
+  margin: 25px 0;
   text-align: center;
   font-size: 3rem;
 }
@@ -277,7 +268,6 @@ margin-left: 20px;
 .bottom-pics {
   width: 260px;
   height: 260px;
-
 }
 
 .bottom-grid {
@@ -303,53 +293,41 @@ margin-left: 20px;
 /*** FOOTER ***/
 
 footer {
-  display: inline-block;
-  width: 1040px;
-  height: auto;
-  margin-left: 20px;
-  /*transform: translateX(80px);*/
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: left;
+  margin: auto;
   background: rgb(20, 42, 84);
   font-size: .7rem;
 }
 
 .ironyard-logo {
-  float: left;
   width: 30px;
   height: 30px;
-  margin: 15px 30px 0 30px;
-  line-height: 30px;
+  flex: 3;
+  /*margin-left: 20px*/
   }
 
 .copyright {
-  display: inline-block;
-  margin-left: 30px
+  display: flex;
+  margin-top: 20px;
+}
+
+.bottom-nav {
+  padding: 0;
+  font-size: 9px;
+  color: rgb(146, 186, 252);
 }
 
   #footer-text {
-  /*display: inline-block;*/
-  width: 100%;
-  margin: 20px  20px;
-  padding-left: 20px
-  line-height: 20px;
   color: rgb(146, 186, 252);
-  font-size: 7px;
-  }
-
-.bottom-nav {
-  /*display: inline-block;*/
-  float: right;
-  margin-top: 20px;
-  margin-left: 40px ;
-  line-height: 20px;
   font-size: 9px;
-  color: rgb(146, 186, 252);
-
-}
+  }
 
   .bottom-nav li {
     display: inline-block;
     list-style: none;
-    padding: 5px;
   }
 
 .nav-items {
