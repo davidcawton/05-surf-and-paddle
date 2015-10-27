@@ -8,45 +8,61 @@ html {
   /*color: rgba(255, 255, 255, 0);*/
 }
 
-/*** NAVIGATION STUFF ***/
+/*** NAVIGATION***/
 
 body {
-  margin:0;
+  margin: 50px;
 }
 
 nav {
-  position: relative;
-  top: 0%;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  width: 100%;
   height: 3rem;
+  align-items: center;
   text-transform: uppercase;
-  font-size: .4em;
+  margin-top: 50px;
   color: rgb(20, 42, 84);
 }
 
-.nav-left {
-  position: absolute;
-  left: 10%;
-  padding: 0;
-  margin: 0;
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  padding: 0 3rem;
+  align-items: center;
+
 }
 
-.search-list {
-  position: absolute;
-  right: 10%;
-  margin: 0;
+.fa-son {
+  display: flex;
+  flex: 1;
+  margin-left: 4rem;
+  font-size: 3rem
+  border-radius: 50%;
+  border: 1px solid #111;
 }
 
-.search-list li {
-display: inline-block;
+.nav-title {
+  display: flex;
+  flex: 2;
+  width: 100%;
+  padding: 10px;
+  margin-left: 1rem;
+}
+
+
+.nav-search {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-search__items {
 list-style: none;
+padding: 1rem;
 }
 
-.fa-sun-o {
-  transform: scale(2);
-  padding: 20px;
-}
 
 /*** HEADER STUFF ***/
 
@@ -227,7 +243,6 @@ aside {
 }
 
 #sb-addtext {
-  text-align: right;
   text-decoration: underline;
   vertical-align: top;
   margin: 0;
@@ -247,10 +262,10 @@ aside {
 /*** BOTTOM SECTIN ***/
 
 .most-popular {
-display: flex;
-flex-direction: column;
-align-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 
 #most-popular {
   margin: 25px 0;
@@ -266,24 +281,23 @@ align-content: center;
 }
 
 .bottom-pics {
-  width: 260px;
-  height: 260px;
+ height: 373.75px;
+ width: 100%;
 }
 
 .bottom-grid {
+  display: flex;
   position: relative;
-  width: 260px;
-  height: 260px;
   margin: 0;
-  background-color: #ddd;
+  width: 100%;
   font-size: 1.2rem;
 }
 
 .picture-titles {
   position: absolute;
-  margin: 5px;
-  top: 85%;
-}
+  top: 75%;
+  left: 15%;
+  }
 
 #selected-title {
   color: rgb(232, 233, 236);
@@ -294,44 +308,48 @@ align-content: center;
 
 footer {
   display: flex;
+  width: 100%;
+  height: 6rem;
   flex-direction: row;
-  align-content: center;
-  justify-content: left;
-  margin: auto;
+  justify-content: center;
   background: rgb(20, 42, 84);
   font-size: .7rem;
 }
 
-.ironyard-logo {
-  width: 30px;
-  height: 30px;
-  flex: 3;
-  /*margin-left: 20px*/
-  }
-
-.copyright {
+.footer-content {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  margin-left: 100px;
 }
 
+.ironyard-logo {
+  display: flex;
+  flex: 1;
+  transform: scale(.3);
+  }
+
+  #footer-text {
+  display: flex;
+  flex: 2;
+  color: rgb(146, 186, 252);
+  font-size: 9px;
+  }
+
 .bottom-nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
   padding: 0;
   font-size: 9px;
   color: rgb(146, 186, 252);
 }
 
-  #footer-text {
-  color: rgb(146, 186, 252);
-  font-size: 9px;
-  }
-
-  .bottom-nav li {
-    display: inline-block;
-    list-style: none;
-  }
-
-.nav-items {
+.nav-items, #selected-nav {
     border-right: solid 1px;
+    list-style: none;
+    padding: 5px;
 }
 
 #selected-nav {
