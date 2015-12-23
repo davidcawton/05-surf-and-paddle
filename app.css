@@ -1,4 +1,7 @@
+/*CSSLint = dissable;*/
+
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -22,12 +25,12 @@ nav {
   height: 3rem;
   align-items: center;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 20px;
   color: rgb(20, 42, 84);
 }
 
 
-.top-nav {
+.nav-title {
   display: flex;
   width: 100%;
   padding: 0 3rem;
@@ -85,16 +88,17 @@ header {
   margin-top: 100px;
   align-content: center;
   text-align: center;
+  max-width: 1100px;
 }
 
-.pagetitle {
+.hero_page-title {
   margin: 0;
   font-size: 5rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #feffff;
 }
 
-.subheader {
+.hero_sub-title {
   margin: 0;
   font-size:  0.8rem;
   color: rgb(20, 42, 84);
@@ -107,7 +111,10 @@ main {
   align-content: center;
 }
 
-.leftcol {
+
+/*** LEFT COL ***/
+
+.blog__left-col {
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -118,10 +125,7 @@ main {
 }
 
 
-/*** LEFT COLUMN ***/
-
-
-.h2-heading {
+.blog-heading {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 2.5rem;
@@ -129,53 +133,54 @@ main {
   color: rgb(20, 42, 84);
 }
 
-.post-title {
+.blog__sub-heading {
   display: flex;
   margin: 0;
   padding: 5px;
 }
 
 
-main li {
+.blog__author-info{
   margin: 0;
   padding: 0px;
   list-style: none;
+  padding-right: 10px;
 }
 
 
-#on {
+#blog__dateline {
   text-decoration: underline;
   color: rgb(47, 43, 47);
 }
 
-.authorpic {
+.blog__author-pic {
   border-radius: 50%;
   border: solid 0.8px #000;
 }
 
-#author {
+#small-author-pic {
   width: 15px;
   height: 15px;
   margin-right: 10px;
 }
 
-.content {
+.blog__content {
   padding-top: 20px;
   font-size: 1em;
 }
 
-#active-link {
+#blog__active-link {
   text-decoration: underline;
   color: rgb(97, 97, 98);
 }
 
-#linked {
+#blog__inactive-link {
   text-decoration: underline;
   color: rgb(16, 86, 205);
 
 }
 
-blockquote {
+.blog__block-quote {
   border-left: solid 2px #ddd;
   padding-left: 40px;
   margin-top: 20px;
@@ -187,18 +192,17 @@ blockquote {
 }
 
 
-.button1, .button {
+.blog__social-btn {
   padding: 0px 3px 0px 0px;
   border: 0;
   color: #fff;
   border-left-color: rgb(60, 60, 60);
-}
-
-.button1 {
   background-color: rgb(156, 172, 204);
+
 }
 
-.button {
+
+#blog__share-btn {
   background-color: rgb(60, 93, 232);
 }
 
@@ -219,86 +223,91 @@ blockquote {
 
 /*** SIDEBAR ***/
 
-aside {
+.blog__sidebar {
   flex: 1;
   overflow: hidden;
   margin-top: 35px;
   text-align: center;
 }
 
-.sb-an {
+.blog__sidebar-name {
   margin: 0;
 }
 
-.sb-text {
+.blog__sidebar-text{
   font-size: .5rem;
 }
 
-#s-para {
+#side-bar-graph {
   font-size: 1rem;
   text-align: left;
 }
 
-#side-author {
+#sidebar-author-pic {
   width: 40px;
   height: 40px;
 }
 
-#sb-addtext {
+#sidebar-ad-text {
   text-decoration: underline;
   vertical-align: top;
   margin: 0;
   font-size: 9px;
 }
 
-.sb-pic {
+.blog__sidebar-pic {
   width: 289px;
   height: auto;
 }
 
-#sb-para-h3 {
+#snippit-header {
   margin-bottom: 0;
   font-size: 1.5em;
 }
 
 /*** BOTTOM SECTIN ***/
 
-.most-popular {
+.blog__bottom {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-#most-popular {
+.blog__bottom-heading {
   margin: 25px 0;
   text-align: center;
   font-size: 3rem;
 }
 
-.bottom {
+.blog__bottom-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: auto;
+  padding-left: 0;
+
 }
 
-.bottom-pics {
- height: 373.75px;
- width: 100%;
-}
-
-.bottom-grid {
-  display: flex;
+.blog__bottom-post {
+  flex: 1;
   position: relative;
-  margin: 0;
-  width: 100%;
+  margin: auto;
   font-size: 1.2rem;
+  list-style: none;
 }
 
-.picture-titles {
+.blog__bottom-post-title {
   position: absolute;
   top: 75%;
   left: 15%;
   }
+
+.blog__bottom-pic {
+  flex: 1;
+  width: 275px;
+  height: 250px;
+  border: 1px solid #000;
+}
 
 #selected-title {
   color: rgb(232, 233, 236);
@@ -317,27 +326,27 @@ footer {
   font-size: .7rem;
 }
 
-.footer-content {
+.footer__content {
   display: flex;
   align-items: center;
   width: 100%;
   margin-left: 100px;
 }
 
-.ironyard-logo {
+.footer__TIY-logo {
   display: flex;
   flex: 1;
   transform: scale(.3);
   }
 
-  #footer-text {
+ .footer__text{
   display: flex;
   flex: 2;
   color: rgb(146, 186, 252);
   font-size: 9px;
   }
 
-.bottom-nav {
+.footer__bottom-nav {
   display: flex;
   align-items: center;
   flex: 1;
@@ -347,12 +356,13 @@ footer {
   color: rgb(146, 186, 252);
 }
 
-.nav-items, #selected-nav {
+.footer__bottom-nav-item {
     border-right: solid 1px;
     list-style: none;
     padding: 5px;
 }
 
-#selected-nav {
+#selected-footer-nav-item {
   color: #ccc;
+  border-right: none;
 }
