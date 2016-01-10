@@ -5,19 +5,14 @@
 html {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-  max-width: 1200px;
-  margin: auto;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   /*color: rgba(255, 255, 255, 0);*/
 }
 
 /*** NAVIGATION***/
-
-body {
-  margin: 50px 50px 0;
-}
 
 nav {
   display: flex;
@@ -42,7 +37,7 @@ nav {
   display: flex;
   flex: 1;
   margin-left: 4rem;
-  font-size: 3rem
+  font-size: 3rem;
   border-radius: 50%;
   border: 1px solid #111;
 }
@@ -50,6 +45,7 @@ nav {
 .nav-title {
   display: flex;
   flex: 2;
+  justify-content: center;
   width: 100%;
   padding: 10px;
   margin-left: 1rem;
@@ -79,28 +75,31 @@ header {
   width: 100%;
   height: 450px;
   background: url(Images/headerSAP.jpg)
-  no-repeat center fixed ;
+  no-repeat center fixed;
   background-size: cover;
+  text-align: center;
 }
 
 
 .hero {
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
   align-content: center;
+  justify-content: center;
   text-align: center;
-  max-width: 1100px;
 }
 
 .hero_page-title {
   margin: 0;
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
   color: #feffff;
 }
 
 .hero_sub-title {
   margin: 0;
-  font-size:  0.8rem;
+  font-size:  1rem;
   color: rgb(20, 42, 84);
 }
 
@@ -108,7 +107,10 @@ header {
 
 main {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+
 }
 
 
@@ -153,6 +155,10 @@ main {
   color: rgb(47, 43, 47);
 }
 
+#blog__dateline:hover {
+  color: rgb(16, 86, 205);
+}
+
 .blog__author-pic {
   border-radius: 50%;
   border: solid 0.8px #000;
@@ -171,13 +177,20 @@ main {
 
 #blog__active-link {
   text-decoration: underline;
+  color: rgb(16, 86, 205);
+}
+
+#blog__active-link:hover {
   color: rgb(97, 97, 98);
 }
 
 #blog__inactive-link {
   text-decoration: underline;
-  color: rgb(16, 86, 205);
+  color: rgb(97, 97, 98);
+}
 
+#blog__inactive-link:hover {
+  color: rgb(16, 86, 205);
 }
 
 .blog__block-quote {
@@ -198,12 +211,19 @@ main {
   color: #fff;
   border-left-color: rgb(60, 60, 60);
   background-color: rgb(156, 172, 204);
+}
 
+.blog__social-btn:hover {
+  background-color: rgb(60, 93, 232);
 }
 
 
 #blog__share-btn {
   background-color: rgb(60, 93, 232);
+}
+
+#blog__share-btn:hover {
+  background-color: rgb(156, 172, 204);
 }
 
 .fa {
@@ -230,6 +250,10 @@ main {
   text-align: center;
 }
 
+.blog__sidebar-social:hover {
+  color: rgb(97, 97, 98);
+}
+
 .blog__sidebar-name {
   margin: 0;
 }
@@ -253,6 +277,10 @@ main {
   vertical-align: top;
   margin: 0;
   font-size: 9px;
+}
+
+#sidebar-ad-text:hover {
+  color: rgb(97, 97, 98);
 }
 
 .blog__sidebar-pic {
@@ -302,6 +330,10 @@ main {
   left: 15%;
   }
 
+  .blog__bottom-post-title:hover {
+    color: #fff;
+  }
+
 .blog__bottom-pic {
   flex: 1;
   width: 275px;
@@ -313,13 +345,17 @@ main {
   color: rgb(232, 233, 236);
 }
 
+#selected-title:hover {
+  color: #fff;
+}
+
 
 /*** FOOTER ***/
 
 footer {
   display: flex;
   width: 100%;
-  height: 6rem;
+  height: 200px;
   flex-direction: row;
   justify-content: center;
   background: rgb(20, 42, 84);
@@ -335,8 +371,10 @@ footer {
 
 .footer__TIY-logo {
   display: flex;
-  flex: 1;
-  transform: scale(.3);
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+
   }
 
  .footer__text{
@@ -356,6 +394,10 @@ footer {
   color: rgb(146, 186, 252);
 }
 
+.footer__bottom-nav-item:hover {
+  color: #ccc;
+}
+
 .footer__bottom-nav-item {
     border-right: solid 1px;
     list-style: none;
@@ -365,4 +407,8 @@ footer {
 #selected-footer-nav-item {
   color: #ccc;
   border-right: none;
+}
+
+#selected-footer-nav-item:hover {
+  color: rgb(146, 186, 252);
 }
