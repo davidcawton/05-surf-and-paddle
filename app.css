@@ -259,7 +259,7 @@ main {
 }
 
 .blog__sidebar-text{
-  font-size: .5rem;
+  font-size: 1rem;
 }
 
 #side-bar-graph {
@@ -326,8 +326,9 @@ main {
 
 .blog__bottom-post-title {
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 15%;
+  color: #eee;
   }
 
   .blog__bottom-post-title:hover {
@@ -338,16 +339,33 @@ main {
   flex: 1;
   width: 275px;
   height: 250px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
 
-#selected-title {
+.bottom-pic-cover {
+  position: absolute;
+  top: 0;
+  width: 275px;
+  height: 250px;
+  background-color: rgba(199, 169, 92, 0.72);
+  padding: 10px;
+}
+
+.blog__bottom-post:hover .bottom-pic-cover {
+  opacity: 0;
+}
+
+.blog__bottom-post:hover .bottom-pic-cover h3 {
+  opacity: 1;
+}
+
+/*#selected-title {
   color: rgb(232, 233, 236);
 }
 
 #selected-title:hover {
   color: #fff;
-}
+}*/
 
 
 /*** FOOTER ***/
