@@ -1,0 +1,30 @@
+{
+  "name": "05-surf-and-paddle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "broccoli": "^0.16.9",
+    "broccoli-babel-transpiler": "^5.5.0",
+    "broccoli-concat": "^2.1.0",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-sass": "^0.7.0",
+    "neat": "^1.2.2",
+    "sass": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcawton/05-surf-and-paddle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidcawton/05-surf-and-paddle/issues"
+  },
+  "homepage": "https://github.com/davidcawton/05-surf-and-paddle#readme"
+}

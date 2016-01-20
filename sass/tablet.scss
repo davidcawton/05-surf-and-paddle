@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1024px) and (min-width: 460px) {
+// NAV
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-search {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .nav-search__items {
+    padding: 20px;
+  }
+
+  .nav-title {
+    visibility: hidden;
+  }
+
+  header {
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero_page-title {
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #feffff;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .blog__left-col {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .blog-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .blog__sub-heading {
+    justify-content: center;
+  }
+  .blog__author-pic {
+    display: none;
+  }
+
+  .blog__block-quote {
+    font-size: 1rem;
+  }
+
+  .blog__social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blog__sidebar {
+    margin-top: 0;
+  }
+
+  .blog__sidebar-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 70%;
+  }
+
+  .blog__sidebar-snippit {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .snippit-header {
+    text-align: center;
+  }
+
+
+  .blog__bottom-grid {
+    flex-direction: column;
+  }
+
+
+  footer {
+    flex-direction: column;
+    height: 100px;
+
+  }
+
+  .footer__content {
+    margin-left: 0;
+  }
+
+  .footer__TIY-logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+
+}

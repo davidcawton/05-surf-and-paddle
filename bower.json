@@ -1,0 +1,23 @@
+{
+  "name": "05-surf-and-paddle",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "David Cawton <dcawton@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/davidcawton/05-surf-and-paddle",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.3",
+    "font-awesome": "~4.5.0",
+    "neat": "~1.7.2"
+  }
+}
