@@ -330,6 +330,8 @@ main {
   top: 65%;
   left: 15%;
   color: #eee;
+  text-shadow: 2px 2px 4px #000000;
+  opacity: .7;
   }
 
   .blog__bottom-post-title:hover {
@@ -350,13 +352,15 @@ main {
   height: 250px;
   background-color: rgba(199, 169, 92, 0.72);
   padding: 10px;
-}
-
-.blog__bottom-post:hover .bottom-pic-cover {
   opacity: 0;
 }
 
-.blog__bottom-post:hover .bottom-pic-cover h3 {
+.blog__bottom-post:hover .bottom-pic-cover {
+  opacity: 0.5;
+  transition: 200ms;
+}
+
+.blog__bottom-post:hover .blog__bottom-post-title {
   opacity: 1;
 }
 

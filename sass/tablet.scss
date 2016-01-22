@@ -90,9 +90,26 @@
 
 
   .blog__bottom-grid {
+    flex-wrap: wrap;
     flex-direction: column;
+
   }
 
+.blog__bottom-pic, .bottom-pic-cover {
+  width: 100%;
+}
+
+.blog__bottom-post {
+  width: 100%;
+}
+
+.blog__bottom-post-title {
+  top: 15%;
+  left: 20%;
+  font-size: 2.5em;
+  text-align: center;
+
+}
 
   footer {
     flex-direction: column;
